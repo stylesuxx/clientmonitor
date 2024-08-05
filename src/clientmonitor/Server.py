@@ -183,26 +183,3 @@ class Server:
 
     del self.connections[conn.fileno()]
     conn.close()
-
-"""
-server = Server(6666, "foobar23")
-server.set_columns([
-  {
-    "key": "queueLength",
-    "label": "Queue Length",
-    "length": 12
-  },
-  {
-    "key": "internalLinkCount",
-    "label": "Internal Links",
-    "length": 12
-  },
-  {
-    "key": "externalLinkCount",
-    "label": "External Links",
-    "length": 12
-  }
-])
-
-server.start()
-"""
